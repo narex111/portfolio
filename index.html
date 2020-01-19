@@ -9,18 +9,25 @@
 </head>
 <body>
 	<div class="container">
-		<div class="system"> 
+		<div class="main" id="system"> 
 			<div class="sun" id="sun" onmouseover="mouseOverAboutMe()" onmouseout="mouseOutAboutMe()"></div>
 			<div class="planet mercury"></div>
-			<div class="planet venus"></div>
-			<div class="planet earth" id="earth" onmouseover="mouseOverCheckers()" onmouseout="mouseOutCheckers()">
+			<div class="planet" id="venus"></div>
+			<div class="planet" id="earth" onmouseover="mouseOverCheckers()" onmouseout="mouseOutCheckers()" onclick="checkersClick()">
 				<img src="./assets/ibTLPyjwVebnZjMGKvz6ztarnuV2.png">
 			</div>
 		</div>
+		<div class="main" id="aboutMeSection">
+			<h1>I'm Narek</h1>
+		</div>
+		<div class="main" id="checkersSection">
+				<h1>Checkers</h1>
+			</div>
 		<div class="nav">
 			<ul> 
-				<li class="description" id="aboutMe" onmouseover="mouseOverAboutMe()" onmouseout="mouseOutAboutMe()">About Me</li>
-				<li class="description" id="checkers" onmouseover="mouseOverCheckers()" onmouseout="mouseOutCheckers()">Checkers</li>
+				<li class="description" id="home" onmouseover="mouseOverHome()" onmouseout="mouseOutHome()" onclick="homeClick()">Home</li>
+				<li class="description" id="aboutMe" onmouseover="mouseOverAboutMe()" onmouseout="mouseOutAboutMe()" onclick="aboutMeClick()">About Me</li>
+				<li class="description" id="checkers" onmouseover="mouseOverCheckers()" onmouseout="mouseOutCheckers()" onclick="checkersClick()">Checkers</li>
 			</ul>
 		</div>
 	</div>
