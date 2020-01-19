@@ -9,15 +9,17 @@
 </head>
 <body>
 	<div class="container">
-		<div class="system"> -->
-			<div class="sun" id="sun"></div>
+		<div class="system"> 
+			<div class="sun" id="sun" onmouseover="mouseOverAboutMe()" onmouseout="mouseOutAboutMe()"></div>
 			<div class="planet mercury"></div>
 			<div class="planet venus"></div>
-			<div class="planet earth" id="earth"></div>
+			<div class="planet earth" id="earth" onmouseover="mouseOverCheckers()" onmouseout="mouseOutCheckers()">
+				<img src="./assets/ibTLPyjwVebnZjMGKvz6ztarnuV2.png">
+			</div>
 		</div>
 		<div class="nav">
 			<ul> 
-				<li class="description" id="AboutMe" onmouseover="mouseOverAboutMe()" onmouseout="mouseOutAboutMe()">About Me</li>
+				<li class="description" id="aboutMe" onmouseover="mouseOverAboutMe()" onmouseout="mouseOutAboutMe()">About Me</li>
 				<li class="description" id="checkers" onmouseover="mouseOverCheckers()" onmouseout="mouseOutCheckers()">Checkers</li>
 			</ul>
 		</div>
