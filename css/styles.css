@@ -11,8 +11,8 @@ body{
 }
 
 img{
-	width: 50%;
-	height: 50%;
+	width: 98%;
+	height: 98%;
 	margin: auto;
 }
 
@@ -30,7 +30,7 @@ img{
 	position: relative;
 }
 
-#aboutMeSection, #checkersSection{
+#aboutMeSection, #checkersSection, #moviesSection{
 	width: 100%;
 	height: 100%;
 	color: #0982BB;
@@ -39,8 +39,8 @@ img{
 }
 
 .sun{
-	width: 45px;
-	height: 45px;
+	width: 8vmin;
+	height: 8vmin;
 	border-radius: 50%;
 	position: absolute;
 	transform: translateY(-50%);
@@ -74,15 +74,15 @@ img{
 } */
 
 #venus{
-	width: 21px;
-	height: 21px;
+	width: 5vmin;
+	height: 5vmin;
 	background-color: #BEB768;
 	animation: venus-orbit 8s linear infinite;
 }
 
 #earth{
-	width: 13px;
-	height: 13px;
+	width: 5vmin;
+	height: 5vmin;
 	background-color: #927E77;
 	animation: earth-orbit 13s linear infinite;
 }
@@ -117,13 +117,13 @@ img{
 }
 
 @keyframes earth-orbit {
-	from { 	transform: rotate(0deg) translateX(34vh) rotate(0deg); }
-	to   {  transform: rotate(360deg) translateX(34vh) rotate(-360deg); }
+	from { 	transform: rotate(0deg) translateX(34vmin) rotate(0deg); }
+	to   {  transform: rotate(360deg) translateX(34vmin) rotate(-360deg); }
 }
 
 @keyframes venus-orbit {
-	from { 	transform: rotate(0deg) translateX(21vh) rotate(0deg); }
-	to   {  transform: rotate(360deg) translateX(21vh) rotate(-360deg); }
+	from { 	transform: rotate(0deg) translateX(21vmin) rotate(0deg); }
+	to   {  transform: rotate(360deg) translateX(21vmin) rotate(-360deg); }
 }
 
 
