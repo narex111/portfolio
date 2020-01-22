@@ -64,6 +64,11 @@ img{
 	display: grid;
 	justify-content: center;
 	align-items: center;
+	animation-fill-mode: forwards;
+}
+
+.planet:hover{
+	animation-play-state: paused;
 }
 
 /* .mercury{
