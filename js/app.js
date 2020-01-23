@@ -23,7 +23,7 @@ const moviesSection = document.getElementById("moviesSection")
 
 //Home Hover
 function mouseOverHome(){
-    home.style.transform = "scale(2)";
+    home.style.transform = "scale(1.5)";
 }
 function mouseOutHome(){
     home.style.transform = "scale(1)";
@@ -31,9 +31,9 @@ function mouseOutHome(){
 
 //AboutMe Hover
 function mouseOverAboutMe(){
-    sun.style.width = "21vmin";
-    sun.style.height = "21vmin";
-    aboutMe.style.transform = "scale(2)";
+    sun.style.width = "13vmin";
+    sun.style.height = "13vmin";
+    aboutMe.style.transform = "scale(1.5)";
 }
 function mouseOutAboutMe(){
     sun.style.width = "8vmin";
@@ -43,10 +43,10 @@ function mouseOutAboutMe(){
 
 //Checkers Hover
 function mouseOverCheckers(){
-    earth.style.width = "13vmin";
-    earth.style.height = "13vmin";
+    earth.style.width = "8vmin";
+    earth.style.height = "8vmin";
     earth.style.animationPlayState = "paused"
-    checkers.style.transform = "scale(2)";
+    checkers.style.transform = "scale(1.5)";
 }
 
 function mouseOutCheckers(){
@@ -58,10 +58,10 @@ function mouseOutCheckers(){
 
 //Movies Hover
 function mouseOverMovies(){
-    venus.style.width = "13vmin";
-    venus.style.height = "13vmin";
+    venus.style.width = "8vmin";
+    venus.style.height = "8vmin";
     venus.style.animationPlayState = "paused"
-    movies.style.transform = "scale(2)";
+    movies.style.transform = "scale(1.5)";
 }
 
 function mouseOutMovies(){
@@ -113,7 +113,7 @@ function checkersClick(){
     for(i=0; i<main.length; i++){
         main[i].style.display = "none"
     }
-    checkersSection.style.display = "block"
+    checkersSection.style.display = "grid"
 
     //going through description class elements and setting all display:none
     for(i=0; i<description.length; i++){

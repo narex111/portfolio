@@ -13,25 +13,27 @@ body{
 
 /* sections */
 .container{
-	width: 100%;
+	width: 100vw;
 	height: 100%;
 	background-color: grey;
 	display: grid;
-	grid-template-columns: 80% 20%;
-
+	grid-template-columns: 70vw 30vw;
 }
 
 #system{
 	background-color: black;
 	position: relative;
+	height: 100%;
+	width: 100%;
 }
 
 #aboutMeSection, #checkersSection, #moviesSection{
 	width: 100%;
-	height: 100%;
+	height: auto;
 	color: #0982BB;
 	display: none;
 	background-color: black;
+	grid-template-rows: auto 20px auto;
 }
 
 
@@ -78,14 +80,14 @@ body{
 #venus{
 	width: 5vmin;
 	height: 5vmin;
-	background-color: #BEB768;
+	background-color: #bb9d09;
 	animation: venus-orbit 8s linear infinite;
 }
 
 #earth{
 	width: 5vmin;
 	height: 5vmin;
-	background-color: #927E77;
+	background-color: #bb4409;
 	animation: earth-orbit 13s linear infinite;
 }
 
@@ -100,6 +102,10 @@ body{
 	background-color: black;
 	display: grid;
 	align-items: center;
+	height: 100%;
+	width: 100%;
+	grid-template-rows: 90% auto;
+	padding: auto 1vmin;
 }
 
 .description{
@@ -110,27 +116,57 @@ body{
 	transition: all 0.5s cubic-bezier(0.4, 0.0, 0.2, 1);
 }
 
+#contacts{
+	list-style-type: none;
+	color: #bb9d09;
+	font-size: 0.9em;
+}
+
 /* pages */
 .pictures{
 	display: grid;
 	grid-auto-flow: column;
-	grid-auto-columns: 1fr 1fr 1fr;
+	/* grid-auto-columns: 1fr 1fr 1fr; */
 	grid-gap: 20px;
-	margin: 10px auto;
+	margin: auto 3vh;
+	align-items: center;
 }
 
 .snapshot{
 	width: 100%;
 	height: auto;
+	margin: 1vmin auto;
 }
 
 .text{
+	display: grid;
 	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin: 1vh 5vw;
 }
 
-h1, p{
+.links{
+	display: grid;
+	justify-content: center;
 	text-align: center;
-	margin: 3% 21%;
+}
+
+
+h1, p, li, a{
+	font-family: DejaVu Sans Mono, monospace;
+}
+
+p{
+	font-size: 0.7em;
+}
+
+a{
+	color: #bb0035;
+}
+
+span{
+	color: #bb9f00;
 }
 
 /* animations */
