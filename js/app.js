@@ -98,7 +98,7 @@ function aboutMeClick(){
     for(i=0; i<main.length; i++){
         main[i].style.display = "none"
     }
-    aboutMeSection.style.display = "block"
+    aboutMeSection.style.display = "grid"
 
     //going through description class elements and setting all display:none
     for(i=0; i<description.length; i++){
@@ -128,7 +128,7 @@ function moviesClick(){
     for(i=0; i<main.length; i++){
         main[i].style.display = "none"
     }
-    moviesSection.style.display = "block"
+    moviesSection.style.display = "grid"
 
     //going through description class elements and setting all display:none
     for(i=0; i<description.length; i++){
