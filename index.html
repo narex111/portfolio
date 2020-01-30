@@ -9,15 +9,35 @@
 </head>
 <body>
 	<div class="container">
+
+		<!-- solar system -->
 		<div class="main" id="system"> 
-			<div class="sun" id="sun" onmouseover="mouseOverAboutMe()" onmouseout="mouseOutAboutMe()" onclick="aboutMeClick()"></div>
-			<div class="planet" id="venus" onmouseover="mouseOverMovies()" onmouseout="mouseOutMovies()" onclick="moviesClick()">
+			<div 
+			class="sun" 
+			id="sun" 
+			onmouseover="mouseOverAboutMe()" 
+			onmouseout="mouseOutAboutMe()" 
+			onclick="aboutMeClick()">
+			</div>
+			<div 
+			class="planet" 
+			id="venus" 
+			onmouseover="mouseOverMovies()" 
+			onmouseout="mouseOutMovies()" 
+			onclick="moviesClick()">
 				<img class="icon" src="./assets/movie.png">
 			</div>
-			<div class="planet" id="earth" onmouseover="mouseOverCheckers()" onmouseout="mouseOutCheckers()" onclick="checkersClick()">
+			<div 
+			class="planet" 
+			id="earth" 
+			onmouseover="mouseOverCheckers()" 
+			onmouseout="mouseOutCheckers()" 
+			onclick="checkersClick()">
 				<img class="icon" src="./assets/checkers.png">
 			</div>
 		</div>
+
+		<!-- About Me -->
 		<div class="main" id="aboutMeSection">
 			<div class="pictures">
 				<img class="snapshot" src="./assets/narek2.jpg"/>
@@ -37,6 +57,8 @@
 				<p>Currently, I'm interning at Mastery Coding where I'm working hard on my <span>React</span> skills and actively looking for a job.</p>
 			</div>	
 		</div>
+
+		<!-- Checkers -->
 		<div class="main" id="checkersSection">
 			<div class="pictures">
 				<img class="snapshot" src="./assets/checkers1.png"/>
@@ -57,6 +79,8 @@
 				<p><span>Technologies used: HTML, CSS, JavaScript.</span></p>
 			</div>
 		</div>
+
+		<!-- Movies -->
 		<div class="main" id="moviesSection">
 			<div class="pictures">
 				<img class="snapshot" src="./assets/movies1.png"/>
@@ -77,16 +101,49 @@
 				<p><span>Technologies used: MongoDB, Mongoose, Node.js, Express, JavaScript, HTML, CSS.</span></p>
 			</div>
 		</div>
+
+		<!-- Navigation -->
 		<div class="nav">
 			<ul id="mainNav"> 
-				<li class="description" id="home" onmouseover="mouseOverHome()" onmouseout="mouseOutHome()" onclick="homeClick()">Home</li>
-				<li class="description" id="aboutMe" onmouseover="mouseOverAboutMe()" onmouseout="mouseOutAboutMe()" onclick="aboutMeClick()">About Me</li>
-				<li class="description" id="checkers" onmouseover="mouseOverCheckers()" onmouseout="mouseOutCheckers()" onclick="checkersClick()">Checkers</li>
-				<li class="description" id="movies" onmouseover="mouseOverMovies()" onmouseout="mouseOutMovies()" onclick="moviesClick()">Top Ten Movies</li>
+				<li 
+				class="description" 
+				id="home" 
+				onmouseover="mouseOverHome()" 
+				onmouseout="mouseOutHome()" 
+				onclick="homeClick()">
+					Home
+				</li>
+				<li 
+				class="description" 
+				id="aboutMe" 
+				onmouseover="mouseOverAboutMe()" 
+				onmouseout="mouseOutAboutMe()" 
+				onclick="aboutMeClick()">
+					About Me
+				</li>
+				<li 
+				class="description" 
+				id="checkers" 
+				onmouseover="mouseOverCheckers()" 
+				onmouseout="mouseOutCheckers()" 
+				onclick="checkersClick()">
+					Checkers
+				</li>
+				<li 
+				class="description" 
+				id="movies" 
+				onmouseover="mouseOverMovies()" 
+				onmouseout="mouseOutMovies()" 
+				onclick="moviesClick()">
+					Top Ten Movies
+				</li>
 			</ul>
+
+			<!-- Info -->
 			<ul id="contacts">
 				<li>narek.m.khachatryan@gmail.com</li>
 			</ul>
+
 		</div>
 	</div>
 	<script src="./js/app.js"></script>
