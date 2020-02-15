@@ -76,19 +76,6 @@ function mouseOutMovies(){
     movies.style.transform = "scale(1)";
 }
 
-// ContactsHover
-// function mouseOverContacts(){
-//     contactsLink.style.transform = "scale(1.5)";
-// }
-
-// function mouseOutContacts(){
-//     contactsLink.style.transform = "scale(1)";
-// }
-
-//
-//UI transformation upon OnClick
-//
-
 //Home Click
 function homeClick(){
     //going through main class elements and setting all display:none
