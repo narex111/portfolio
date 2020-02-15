@@ -10,12 +10,17 @@ const checkers = document.getElementById("checkers")
 const venus = document.getElementById("venus")
 const movies = document.getElementById("movies")
 
+
 const system = document.getElementById("system")
 const main = document.getElementsByClassName("main")
 const description = document.getElementsByClassName("description")
 const aboutMeSection = document.getElementById("aboutMeSection")
 const checkersSection = document.getElementById("checkersSection")
 const moviesSection = document.getElementById("moviesSection")
+
+const email = document.getElementById("email")
+const phone = document.getElementById("phone")
+
 
 //
 //UI Transformation upon Hover
@@ -70,6 +75,15 @@ function mouseOutMovies(){
     venus.style.animationPlayState = "running"
     movies.style.transform = "scale(1)";
 }
+
+// ContactsHover
+// function mouseOverContacts(){
+//     contactsLink.style.transform = "scale(1.5)";
+// }
+
+// function mouseOutContacts(){
+//     contactsLink.style.transform = "scale(1)";
+// }
 
 //
 //UI transformation upon OnClick
@@ -136,3 +150,24 @@ function moviesClick(){
     }
     movies.style.display = "none";
 }
+
+function phoneClick(){
+    //toggling phone (and email if needed)
+    if(phone.style.display === "none"){
+        phone.style.display = "inline"
+        email.style.display = "none"
+    }else{
+        phone.style.display = "none"
+    } 
+}
+
+function emailClick(){
+    //toggling email (and phone if needed)
+    if(email.style.display === "none"){
+        email.style.display = "inline"
+        phone.style.display = "none"
+    }else{
+        email.style.display = "none"
+    } 
+}
+
