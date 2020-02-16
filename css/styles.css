@@ -27,7 +27,7 @@ body{
 	width: 100%;
 }
 
-#aboutMeSection, #checkersSection, #moviesSection{
+#aboutMeSection, #checkersSection, #moviesSection, #storybookSection{
 	width: 100%;
 	height: auto;
 	color: #0982BB;
@@ -78,6 +78,7 @@ body{
 	transition: all 0.5s cubic-bezier(0.4, 0.0, 0.2, 1);
 	display: grid;
 	justify-content: center;
+	justify-items: center;
 	align-items: center;
 	animation-fill-mode: forwards;
 }
@@ -86,6 +87,12 @@ body{
 	animation-play-state: paused;
 }
 
+#mercury{
+	width: 5vmin;
+	height: 5vmin;
+	background-color: #3c01bb;
+	animation: mercury-orbit 21s linear infinite;
+}
 
 #venus{
 	width: 5vmin;
@@ -142,7 +149,14 @@ body{
 	display: grid;
 	grid-template-columns: auto auto auto auto;	
 	gap: 34px;
-	width: 100%;
+	justify-items: center;
+	text-align: center;
+	justify-content: center;
+}
+
+.icon{
+	height: 40px;
+	width: auto;
 }
 
 #ephone{
@@ -150,10 +164,9 @@ body{
 	justify-items: center;
 }
 
-.icon{
-	width: auto;
-	height: 25px;
-	margin: auto 10px;
+.logo{
+	width: 70%;
+	height: auto;
 	cursor: pointer;
 }
 
@@ -206,13 +219,13 @@ a{
 }
 
 span{
-	color: #bb9f00;
+	color: #0982BB;
 }
 
 /* animations */
 @keyframes mercury-orbit {
-	from { 	transform: rotate(0deg) translateX(13vh) rotate(0deg); }
-	to   {  transform: rotate(360deg) translateX(13vh) rotate(-360deg); }
+	from { 	transform: rotate(0deg) translateX(42vmin) rotate(0deg); }
+	to   {  transform: rotate(360deg) translateX(42vmin) rotate(-360deg); }
 }
 
 @keyframes earth-orbit {

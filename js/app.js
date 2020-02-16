@@ -10,6 +10,9 @@ const checkers = document.getElementById("checkers")
 const venus = document.getElementById("venus")
 const movies = document.getElementById("movies")
 
+const mercury = document.getElementById("mercury")
+const storybook = document.getElementById("storybook")
+
 
 const system = document.getElementById("system")
 const main = document.getElementsByClassName("main")
@@ -17,6 +20,7 @@ const description = document.getElementsByClassName("description")
 const aboutMeSection = document.getElementById("aboutMeSection")
 const checkersSection = document.getElementById("checkersSection")
 const moviesSection = document.getElementById("moviesSection")
+const storybookSection = document.getElementById("storybookSection")
 
 const email = document.getElementById("email")
 const phone = document.getElementById("phone")
@@ -74,6 +78,21 @@ function mouseOutMovies(){
     venus.style.height = "5vmin";
     venus.style.animationPlayState = "running"
     movies.style.transform = "scale(1)";
+}
+
+//Storybook Hover
+function mouseOverStorybook(){
+    mercury.style.width = "8vmin";
+    mercury.style.height = "8vmin";
+    mercury.style.animationPlayState = "paused"
+    storybook.style.transform = "scale(1.5)";
+}
+
+function mouseOutStorybook(){
+    mercury.style.width = "5vmin";
+    mercury.style.height = "5vmin";
+    mercury.style.animationPlayState = "running"
+    storybook.style.transform = "scale(1)";
 }
 
 //Home Click
@@ -138,6 +157,23 @@ function moviesClick(){
     movies.style.display = "none";
 }
 
+
+//Storybook Click
+function storybookClick(){
+    //going through main class elements and setting all display:none
+    for(i=0; i<main.length; i++){
+        main[i].style.display = "none"
+    }
+    storybookSection.style.display = "grid"
+
+    //going through description class elements and setting all display:none
+    for(i=0; i<description.length; i++){
+        description[i].style.display = "list-item"
+    }
+    storybook.style.display = "none";
+}
+
+//Contact Icons
 function phoneClick(){
     //toggling phone (and email if needed)
     if(phone.style.display === "none"){

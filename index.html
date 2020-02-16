@@ -21,11 +21,19 @@
 			</div>
 			<div 
 			class="planet" 
+			id="mercury" 
+			onmouseover="mouseOverStorybook()" 
+			onmouseout="mouseOutStorybook()" 
+			onclick="storybookClick()">
+			<img class="logo" src="./assets/storybook.png">
+			</div>
+			<div 
+			class="planet" 
 			id="venus" 
 			onmouseover="mouseOverMovies()" 
 			onmouseout="mouseOutMovies()" 
 			onclick="moviesClick()">
-				<img class="icon" src="./assets/movie.png">
+				<img class="logo" src="./assets/movies.png">
 			</div>
 			<div 
 			class="planet" 
@@ -33,7 +41,7 @@
 			onmouseover="mouseOverCheckers()" 
 			onmouseout="mouseOutCheckers()" 
 			onclick="checkersClick()">
-				<img class="icon" src="./assets/checkers.png">
+				<img class="logo" src="./assets/checkers.png">
 			</div>
 		</div>
 
@@ -102,6 +110,27 @@
 			</div>
 		</div>
 
+		<!-- Storybook -->
+		<div class="main" id="storybookSection">
+			<div class="pictures">
+				<img class="snapshot" src="./assets/storybook1.png"/>
+				<img class="snapshot" src="./assets/storybook2.png"/>
+				<img class="snapshot" src="./assets/storybook3.png"/>
+			</div>
+			<div class="links">
+				<!-- <p>
+					<a href="https://github.com/narex111/top-ten-movies" target="_blank">Github</a>    
+					<a href="https://mytopten.herokuapp.com/" target="_blank">Website</a>
+				</p> -->
+			</div>
+			<div class="text">
+				<h1>Storybook For Mastery Coding</h1>
+				<p>After graduating from a <a href="https://generalassemb.ly/education/software-engineering-immersive/los-angeles" target="_blank">General Assembly</a> bootcamp, I was lucky to get an internship at <a href="https://masterycoding.com/" target="_blank"> Mastery Coding</a> under supervision and mentorship of <a href="https://www.linkedin.com/in/justin-punz/"  target="_blank">Justin Punzalan</a>. My first challenge there was to learn and implement a <a href="https://storybook.js.org/"  target="_blank">Storybook</a> component testing environment.</p>
+				<p>This project not only introduced me to <span>component testing</span> but also vastly improved my undertading of <span>React</span> and <span>state management</span>.</p>
+				<p><span>Technologies used: ReactJS, Storybook.</span></p>
+			</div>
+		</div>
+
 		<!-- Navigation -->
 		<div class="nav">
 			<!-- Contacts -->
@@ -116,7 +145,7 @@
 				</div>
 				<div id="ephone">
 					<a id="email" href="mailto:narek.m.khachatryan@gmail.com"><p>narek.m.khachatryan@gmail.com</p></a>
-					<a id="phone" href="tel:818-720-6458"><p>818-720-6458</p></a>
+					<a id="phone" href="tel:818-720-6458"><p>+1(818)720-6458</p></a>
 				</div>
 			</div>
 			<!-- Main Nav -->
@@ -152,6 +181,14 @@
 				onmouseout="mouseOutMovies()" 
 				onclick="moviesClick()">
 					Top Ten Movies
+				</li>
+				<li 
+				class="description" 
+				id="storybook" 
+				onmouseover="mouseOverStorybook()" 
+				onmouseout="mouseOutStorybook()" 
+				onclick="storybookClick()">
+					Storybook
 				</li>
 			</ul>
 			<!-- Calendly badge widget begin -->
